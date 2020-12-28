@@ -66,7 +66,7 @@ except:
 
 try:    
     main = WebDriverWait(driver,10).until(EC.presence_of_element_located((By.ID,"new_lesson_address_input")))
-    main.send_keys("3 Place Saint-Nizier, Lyon")
+    main.send_keys("*************") #Your address
     time.sleep(1)
     print("load possibilities")
     main.send_keys(Keys.RETURN)
